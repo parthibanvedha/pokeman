@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon API</title>
+    <link rel="stylesheet" href="poke.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+    <div class="title">
+        <h1> Welcome to  Pokemons </h1> 
+    </div>
+
+    <div class="description">
+        <strong>
+            About this page:
+        </strong>
+        <p>
+            This page gives details about Pokemons. You will get details like name, ability, moves and weight.
+            This page is designed by <b>parthiban</b> using <b>pokeapi.co</b> API.
+        </p>
+
+        <strong>
+            Enter no of Pokemon you want: <span><input type="number" id="num"></span>
+        </strong><br>
+        <button id="btn" class="btn btn-success" onClick="getInfo()"> Get</button>
+    </div>
+
+    <div class="row" id="output-box">
+        <!-- Pokemons will be shown here -->
+    </div>
+
+</div>
+    <script src="poke.js"></script>
+</body>
+</html>
